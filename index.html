@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Capacite sua comunicação e amplie o impacto das suas iniciativas com o Espaço Marketing de ImPacto, a nova central de recursos de marketing do Pacto Global - Rede Brasil.">
+  <title>Espaço Marketing de ImPacto | Pacto Global Rede Brasil</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Configuração Customizada Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Roboto', 'sans-serif'], // Define Roboto como padrão sans-serif
+            // flama: ['Flama', 'sans-serif'] // Descomente e certifique-se que Flama está carregada se for usar
+          },
+          colors: {
+            // Paleta de Cores do Pacto Global
+            'pacto-dark-blue': '#1e3250',      // Tom Principal (Mais Escuro)
+            'pacto-mid-dark-blue': '#4c6b8b', // Tom 1
+            'pacto-mid-light-blue': '#699cc6', // Tom 2 (Accent)
+            'pacto-light-blue': '#aecfe6',    // Tom 3 (Mais Claro)
+            // Cores neutras mantidas para texto e fundo claro
+            'white': '#ffffff',
+            'gray-100': '#f8f9fa', // Fundo claro alternativo
+            'gray-200': '#e9ecef', // Bordas sutis
+            'gray-600': '#6c757d', // Texto secundário
+            'gray-700': '#495057', // Texto principal claro
+            'gray-900': '#212529', // Texto principal escuro
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Link para estilos customizados (opcional, para o que não é coberto pelo Tailwind) -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts: Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body class="font-sans bg-gray-100 text-gray-900 antialiased">
+  <!-- Impede zoom na página -->
+  <script>
+    window.addEventListener("wheel", (e)=> {
+      const isPinching = e.ctrlKey
+      if(isPinching) e.preventDefault()
+    }, { passive: false })
+  </script>
+
+  <!-- Header - Primeira Dobra (Atenção) -->
+  <header class="relative w-full min-h-screen flex flex-col justify-center bg-pacto-dark-blue text-white" id="top">
+    <div class="absolute top-0 w-full py-6 px-4 md:px-8 z-10">
+      <div class="container mx-auto flex justify-between items-center">
+         <!-- *********************************************************** -->
+         <!-- ATENÇÃO: SUBSTITUIR pelo URL da VERSÃO BRANCA do logo -->
+         <!-- O logo azul não terá contraste aqui.                      -->
+         <!-- *********************************************************** -->
+        <img src="URL_LOGO_PACTO_GLOBAL_BRANCO_AQUI" alt="Logo Pacto Global - Rede Brasil" class="h-10 md:h-12">
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 md:px-8 pt-20 pb-16 md:pt-16 md:pb-24 flex flex-col items-center text-center">
+        <!-- Aplicando font-black (weight 900) via classe Tailwind -->
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-4">
+          Comunicação de ImPacto: Potencialize Suas Iniciativas na Rede Brasil
+        </h1>
+        <!-- Usando 'Roboto' via font-sans (padrão do body agora) -->
+        <p class="hero-subtitle text-xl text-pacto-light-blue mb-8 max-w-3xl">
+          Conheça o <strong>Espaço Marketing de ImPacto</strong>: sua nova central de aprendizado rápido e recursos práticos para otimizar sua comunicação e simplificar seu dia a dia.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center">
+          <!-- Botão usando cores Pacto e Roboto (padrão) -->
+          <a href="#conteudo" class="cta-button w-full sm:w-auto mb-4 sm:mb-0 sm:mr-4 bg-pacto-mid-light-blue hover:bg-pacto-mid-dark-blue text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-all transform hover:-translate-y-1 hover:shadow-xl text-center">
+            Explore os Módulos Agora
+          </a>
+          <a href="#beneficios" class="w-full sm:w-auto text-pacto-light-blue hover:text-white font-medium flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            Veja os Benefícios
+          </a>
+        </div>
+    </div>
+
+    <div class="absolute bottom-8 left-0 right-0 flex justify-center">
+      <a href="#desafio" class="animate-bounce bg-white p-2 w-10 h-10 ring-1 ring-gray-200 shadow-lg rounded-full flex items-center justify-center">
+        <svg class="w-6 h-6 text-pacto-dark-blue" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Problema -->
+  <section id="desafio" class="section-padding bg-gray-100">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <!-- Aplicando font-bold (weight 700) via classe Tailwind -->
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-pacto-dark-blue">Seu Desafio, Nossa Missão</h2>
+        <p class="text-xl text-gray-700">Sabemos que a rotina é intensa. Criar o briefing perfeito, garantir que cada material use nossa identidade visual corretamente, ou redigir uma legenda rápida e impactante pode consumir um tempo precioso. Muitas vezes, falta a ferramenta certa ou o direcionamento claro para comunicar o impacto do seu trabalho com agilidade e segurança.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solução -->
+  <section id="solucao" class="section-padding bg-white">
+    <div class="container mx-auto px-4 md:px-8">
+       <div class="max-w-3xl mx-auto text-center mb-16">
+        <span class="inline-block px-3 py-1 bg-pacto-light-blue bg-opacity-40 text-pacto-dark-blue text-xs font-semibold rounded-full mb-4 uppercase tracking-wider">A Solução Interna</span>
+        <!-- Aplicando font-bold (weight 700) via classe Tailwind -->
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-pacto-dark-blue">Apresentando o Espaço Marketing de ImPacto</h2>
+        <p class="text-xl text-gray-700">Uma iniciativa da área de Marketing em parceria com o RH, criada para descomplicar, capacitar e oferecer o essencial para que sua comunicação seja mais fluida, estratégica e gere ainda mais impacto.</p>
+      </div>
+       <!-- Imagem/visual pode ser adicionado aqui -->
+    </div>
+  </section>
+
+  <!-- Conteúdo / Módulos -->
+  <section id="conteudo" class="section-padding bg-gray-100">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <!-- Aplicando font-bold (weight 700) via classe Tailwind -->
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-pacto-dark-blue">O que você vai encontrar?</h2>
+        <p class="text-xl text-gray-700">Módulos curtos e focados, com recursos práticos para aplicação imediata no seu dia a dia:</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Módulo 1: Briefing -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover-lift">
+           <div class="w-12 h-12 bg-pacto-light-blue bg-opacity-40 rounded-full flex items-center justify-center mb-4">
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pacto-dark-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>
+           </div>
+          <h3 class="text-xl font-semibold mb-2 text-pacto-mid-dark-blue">Briefings que Geram Resultados</h3>
+          <p class="text-gray-600 text-sm">Templates e checklists para solicitações claras e eficazes. Menos retrabalho, mais ação!</p>
+        </div>
+        <!-- Módulo 2: Canva -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover-lift">
+          <div class="w-12 h-12 bg-pacto-light-blue bg-opacity-40 rounded-full flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pacto-dark-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-pacto-mid-dark-blue">Canva Institucional Sem Segredos</h3>
+          <p class="text-gray-600 text-sm">Domine nossos templates, use os recursos com confiança e crie materiais visualmente alinhados.</p>
+        </div>
+        <!-- Módulo 3: Guia de Estilo -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover-lift">
+           <div class="w-12 h-12 bg-pacto-light-blue bg-opacity-40 rounded-full flex items-center justify-center mb-4">
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pacto-dark-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+           </div>
+          <h3 class="text-xl font-semibold mb-2 text-pacto-mid-dark-blue">Nossa Marca na Prática</h3>
+          <p class="text-gray-600 text-sm">Aplique corretamente o Guia de Estilo (visual e verbal) e fortaleça a identidade do Pacto Global.</p>
+        </div>
+        <!-- Módulo 4: Copywriting -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover-lift">
+           <div class="w-12 h-12 bg-pacto-light-blue bg-opacity-40 rounded-full flex items-center justify-center mb-4">
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pacto-dark-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
+           </div>
+          <h3 class="text-xl font-semibold mb-2 text-pacto-mid-dark-blue">Textos Rápidos para Redes</h3>
+          <p class="text-gray-600 text-sm">Dicas de copywriting e direção de arte para legendas e posts curtos mais engajadores.</p>
+        </div>
+        <!-- Módulo 5: Parcerias -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover-lift">
+           <div class="w-12 h-12 bg-pacto-light-blue bg-opacity-40 rounded-full flex items-center justify-center mb-4">
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pacto-dark-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+           </div>
+          <h3 class="text-xl font-semibold mb-2 text-pacto-mid-dark-blue">Parcerias que Geram Valor</h3>
+          <p class="text-gray-600 text-sm">O essencial sobre contrapartidas e ativações em nossas redes sociais.</p>
+        </div>
+        <!-- Módulo 6: Eventos -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover-lift">
+          <div class="w-12 h-12 bg-pacto-light-blue bg-opacity-40 rounded-full flex items-center justify-center mb-4">
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pacto-dark-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+           </div>
+          <h3 class="text-xl font-semibold mb-2 text-pacto-mid-dark-blue">Cobertura de Eventos Eficaz</h3>
+          <p class="text-gray-600 text-sm">Guia rápido para planejar e gerar conteúdo de impacto durante nossas ações.</p>
+        </div>
+         <!-- Módulo 7: Intro Mkt Sustentável -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover-lift">
+          <div class="w-12 h-12 bg-pacto-light-blue bg-opacity-40 rounded-full flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pacto-dark-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+           </div>
+          <h3 class="text-xl font-semibold mb-2 text-pacto-mid-dark-blue">Por Que Marketing Sustentável?</h3>
+          <p class="text-gray-600 text-sm">Conectando seu trabalho aos ODS e ao propósito maior do Pacto Global.</p>
+        </div>
+        <!-- Módulo 8: Mídia -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover-lift">
+           <div class="w-12 h-12 bg-pacto-light-blue bg-opacity-40 rounded-full flex items-center justify-center mb-4">
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pacto-dark-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3.418" /></svg>
+           </div>
+          <h3 class="text-xl font-semibold mb-2 text-pacto-mid-dark-blue">Onde Nossa Mensagem Chega?</h3>
+          <p class="text-gray-600 text-sm">Entendendo nossos canais de comunicação e como definir a mídia certa.</p>
+        </div>
+         <!-- Módulo 9: Fornecedores -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover-lift">
+           <div class="w-12 h-12 bg-pacto-light-blue bg-opacity-40 rounded-full flex items-center justify-center mb-4">
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pacto-dark-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+           </div>
+          <h3 class="text-xl font-semibold mb-2 text-pacto-mid-dark-blue">Trabalhando com Parceiros</h3>
+          <p class="text-gray-600 text-sm">Como funciona nosso processo de gestão de fornecedores de marketing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefícios -->
+  <section id="beneficios" class="section-padding bg-white">
+    <div class="container mx-auto px-4 md:px-8">
+       <div class="max-w-3xl mx-auto text-center mb-16">
+         <!-- Aplicando font-bold (weight 700) via classe Tailwind -->
+         <h2 class="text-3xl md:text-4xl font-bold mb-6 text-pacto-dark-blue">Benefícios Imediatos Para Você e Sua Área</h2>
+      </div>
+      <div class="max-w-2xl mx-auto">
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pacto-mid-light-blue mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+              <span class="text-lg text-gray-700">Ganhe <strong class="font-semibold">agilidade</strong> no seu dia a dia, focando no que realmente importa.</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pacto-mid-light-blue mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.135 3.135 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.135 3.135 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.135-3.135 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.135-3.135z" /></svg>
+              <span class="text-lg text-gray-700">Tenha mais <strong class="font-semibold">autonomia e confiança</strong> para criar e adaptar materiais de comunicação.</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pacto-mid-light-blue mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <span class="text-lg text-gray-700">Garanta materiais 100% alinhados e <strong class="font-semibold">consistentes</strong> com a nossa identidade visual e verbal.</span>
+            </li>
+             <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pacto-mid-light-blue mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-12v4m-2-2h4m6 4v4m-2-2h4M4 11a1 1 0 011-1h14a1 1 0 110 2H5a1 1 0 01-1-1z" /></svg>
+              <span class="text-lg text-gray-700">Eleve a <strong class="font-semibold">qualidade</strong> da sua comunicação, tornando-a mais clara e profissional.</span>
+            </li>
+             <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pacto-mid-light-blue mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" /></svg>
+              <span class="text-lg text-gray-700">Melhore a <strong class="font-semibold">colaboração</strong> com a área de Marketing e outros parceiros.</span>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section id="comecar" class="section-padding bg-pacto-light-blue bg-opacity-30">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="max-w-3xl mx-auto text-center">
+         <!-- Aplicando font-bold (weight 700) via classe Tailwind -->
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-pacto-dark-blue">Pronto para Começar?</h2>
+        <p class="text-xl text-gray-700 mb-8">Acesse agora o Espaço Marketing de ImPacto e comece a transformar sua comunicação.</p>
+
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8 border border-gray-200">
+          <h3 class="text-xl font-semibold mb-4 text-pacto-mid-dark-blue">Como Acessar:</h3>
+           <ol class="list-decimal list-inside space-y-3 text-left text-gray-700 mb-6">
+               <li><strong>Explore os Módulos:</strong> Acesse o conteúdo no seu ritmo no nosso espaço dedicado no <strong class="font-semibold">[Plataforma Interna - ex: SharePoint]</strong>.</li>
+               <li><strong>Use os Recursos:</strong> Baixe guias, templates e checklists para aplicar diretamente no seu trabalho.</li>
+               <li><strong>Participe e Tire Dúvidas:</strong> Fique atento à agenda das sessões de Q&A ao vivo (opcionais) e utilize nosso canal no <strong class="font-semibold">[Canal Teams/Slack - Substituir Link]</strong> para perguntas.</li>
+            </ol>
+            <a href="LINK_PARA_REPOSITORIO_INTERNO" target="_blank" rel="noopener noreferrer" class="cta-button inline-block bg-pacto-mid-light-blue hover:bg-pacto-mid-dark-blue text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-all transform hover:-translate-y-1 hover:shadow-xl text-center text-lg">
+             Acessar o Espaço Agora
+            </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-pacto-dark-blue text-white">
+    <div class="container mx-auto px-4 md:px-8 text-center">
+       <!-- Usando o logo azul padrão aqui, pois o fundo é escuro mas pode ter contraste suficiente, ou usar o branco novamente -->
+      <img src="https://www.pactoglobal.org.br/wp-content/uploads/2024/11/Destaque-Pacto.png" alt="Logo Pacto Global - Rede Brasil" class="h-8 mx-auto mb-4">
+      <p class="text-sm text-pacto-light-blue">Iniciativa Interna de Capacitação | Marketing & RH</p>
+      <p class="text-sm text-gray-400 mt-2">© 2024 Pacto Global da ONU - Rede Brasil.</p>
+       <!-- Link Flowith removido ou pode ser mantido se a ferramenta foi usada -->
+    </div>
+  </footer>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+</body>
+</html>
