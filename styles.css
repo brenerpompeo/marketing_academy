@@ -1,0 +1,34 @@
+/* Estilos adicionais além do Tailwind e da config */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animações suaves de hover (Exemplo) */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra genérica */
+}
+
+/* Customize scrollbar (Opcional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Usar cor neutra */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #AECE6; /* Ou outra cor Pacto sutil */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #699CC6; /* Cor Pacto mais escura no hover */
+}
+
+/* Ajustes finos adicionais podem ir aqui */
